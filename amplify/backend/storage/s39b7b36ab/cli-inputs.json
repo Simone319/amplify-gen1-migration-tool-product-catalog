@@ -1,0 +1,14 @@
+{
+  "resourceName": "s39b7b36ab",
+  "policyUUID": "9b7b36ab",
+  "bucketName": "projectboards767a940442d14c169ca2466d147d866b",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "S3Triggerab6d9679",
+  "groupAccess": {}
+}
