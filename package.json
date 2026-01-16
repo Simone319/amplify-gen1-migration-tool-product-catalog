@@ -37,6 +37,7 @@
     "@aws-amplify/backend": "^1.18.0",
     "@aws-amplify/backend-cli": "^1.8.0",
     "@aws-amplify/backend-data": "^1.6.2",
+    "@aws-cdk/cloudformation-diff": "^2.189.0",
     "aws-cdk": "^2.189.0",
     "aws-cdk-lib": "^2.189.0",
     "ci-info": "^4.3.1",
