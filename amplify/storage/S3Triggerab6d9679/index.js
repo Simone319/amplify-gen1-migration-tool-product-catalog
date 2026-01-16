@@ -4,7 +4,7 @@
 	API_PROJECTBOARDS_GRAPHQLAPIKEYOUTPUT
 	ENV
 	REGION
-Amplify Params - DO NOT EDIT */exports.handler = async function (event) {
+Amplify Params - DO NOT EDIT */export async function handler(event) {
   console.log('Received S3 event:', JSON.stringify(event, null, 2));
   const bucket = event.Records[0].s3.bucket.name;
   const key = event.Records[0].s3.object.key;
