@@ -25,11 +25,11 @@ backend.lowstockproducts.resources.lambda.addToRolePolicy(new aws_iam.PolicyStat
     resources: [`arn:aws:appsync:${backend.data.stack.region}:${backend.data.stack.account}:apis/${backend.data.apiId}/types/Query/*`]
 }))
 
-backend.S3Trigger<suffix>.addEnvironment('API_PRODUCTCATALOG_GRAPHQLAPIKEYOUTPUT', backend.data.apiKey!)
-backend.S3Trigger<suffix>.addEnvironment('API_PRODUCTCATALOG_GRAPHQLAPIENDPOINTOUTPUT', backend.data.graphqlUrl)
-backend.S3Trigger<suffix>.addEnvironment('API_PRODUCTCATALOG_GRAPHQLAPIIDOUTPUT', backend.data.apiId)
+backend.S3Triggerab6d9679.addEnvironment('API_PRODUCTCATALOG_GRAPHQLAPIKEYOUTPUT', backend.data.apiKey!)
+backend.S3Triggerab6d9679.addEnvironment('API_PRODUCTCATALOG_GRAPHQLAPIENDPOINTOUTPUT', backend.data.graphqlUrl)
+backend.S3Triggerab6d9679.addEnvironment('API_PRODUCTCATALOG_GRAPHQLAPIIDOUTPUT', backend.data.apiId)
 
-backend.S3Trigger<suffix>.resources.lambda.addToRolePolicy(new aws_iam.PolicyStatement({
+backend.S3Triggerab6d9679.resources.lambda.addToRolePolicy(new aws_iam.PolicyStatement({
     effect: aws_iam.Effect.ALLOW,
     actions: ['appsync:GraphQL'],
     resources: [`arn:aws:appsync:${backend.data.stack.region}:${backend.data.stack.account}:apis/${backend.data.apiId}/types/Mutation/*`]
